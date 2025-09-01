@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yasemin Crochet World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #ff7ab6, #a26bff, #6c3eff);
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #fff;
+      color: #333;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-body h3 {
+      margin: 0 0 0.5rem;
+    }
+    .price {
+      color: #6c3eff;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255,255,255,0.1);
+      margin-top: 2rem;
+    }
+    footer a {
+      margin: 0 0.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yasemin Crochet World</h1>
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#">Ürünler</a>
+      <a href="#">İletişim</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>El Yapımı Örgü Dünyasına Hoşgeldiniz 🧶</h2>
+    <p>Sevgiyle örülmüş, renkli ve benzersiz tasarımlar. Amigurumi oyuncaklardan dekoratif örgülere kadar hepsi burada.</p>
+  </section>
+
+  <section class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593261303992-9b0873c87cf9?q=80&w=600" alt="Amigurumi Oyuncak">
+      <div class="card-body">
+        <h3>Amigurumi Oyuncak</h3>
+        <p>El işi örgü oyuncak</p>
+        <p class="price">100₺</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521123845560-14093637aa7d?q=80&w=600" alt="Dekoratif Yastık">
+      <div class="card-body">
+        <h3>Dekoratif Yastık</h3>
+        <p>Renkli örgü yastık</p>
+        <p class="price">150₺</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=600" alt="Örgü Hırka">
+      <div class="card-body">
+        <h3>Örgü Hırka</h3>
+        <p>El yapımı hırka</p>
+        <p class="price">200₺</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Yasemin Crochet World | Tüm Hakları Saklıdır</p>
+    <p>
+      <a href="https://instagram.com/">Instagram</a> |
+      <a href="mailto:info@yasemincrochetworld.com">E-posta</a>
+    </p>
+  </footer>
+</body>
+</html>
